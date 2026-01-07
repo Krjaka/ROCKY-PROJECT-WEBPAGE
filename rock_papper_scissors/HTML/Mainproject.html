@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--- Contact form page with a responsive design -->
+    <meta charset="UTF-8">
+    <!--- Meta tags for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Game </title>
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <!--- Font w3school for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section with navigation -->
+    <header>
+        <h2 class="logo">
+            <a href="../index.html">Homepage</a>
+        </h2>
+        <!-- Navigation menu -->
+        <nav class="navigation">
+
+            <a href="Mainproject.html">Main game</a>
+            <a href="../HTML/About_uss.html">About us</a>
+            <a href="../HTML/Contact_form.html">Contact us</a>
+            <a href="../HTML/services_projects.html">Services</a>
+
+
+        </nav>
+
+    </header>
+    <!-- Intro/hero section -->
+    <div class="flexbox">
+        <!-- Intro image -->
+        <img class="introimg" src="../img/bg2.png" alt="intro/hero section">
+        <!-- Intro text and button -->
+        <h1 class="intro-text">Rock Paper Scissors</h1>
+        <p class="intro-undertext">Scroll down to play</p>
+    </div>
+    <!-- About us section -->
+
+
+    <div class="container-game">
+        <button onclick=" playGame('rock')" class="play-button"><img src="../img/rock.png" alt="" style="height:200px;"></button>
+
+        <button onclick=" playGame('paper')" class="play-button"><img src="../img/paper.png" alt="" style="height:200px;"></button>
+
+        <button onclick="playGame('scissors')" class="play-button"><img src="../img/Scissors.png" alt="" style="height:200px;"></button>
+
+
+        <p class="JS-score"></p>
+        <p class="JS-result"></p>
+        <p class="JS-moves">
+        </p>
+
+        <button onclick="
+        score.vinst= 0;
+        score.förlust= 0;
+        score.likamed= 0
+        localStorage.removeItem('score') 
+        updateScoreElement();" class="AboutUsButton">Reset score</button>
+    </div>
+
+    <div class="footer">
+
+        <div class="header">
+            <h2>WEB CONTENT</h2>
+        </div>
+        <div class="footer_content">
+            <div>
+                <h2> Explore</h2>
+                <p>
+                    <a href="../index.html">Homepage</a>
+                </p>
+                <p>
+                    <a href="../HTML/Contact_form.html">Contact</a>
+                </p>
+                <p>
+                    <a href="../HTML/Rock_Paper_scissors_design.html">Main game project</a>
+                </p>
+                <p>
+                    <a href="../HTML/About_uss.html">About us</a>
+                </p>
+            </div>
+            <div>
+                <h2>Contact</h2>
+                <p>
+                     ODengatan300
+                </p>
+                <p>
+                    111 20, stockholm
+                </p>
+                <p>
+                    <a href="tel:+4676111222"><i class="fa fa-phone" style="font-size:24px; text-align: justify;"></i> +4676111222</a>
+                </p>
+                <p>
+                    <a href="mailto:someone@example.com"> <i class="fa fa-envelope" style="font-size:20px;padding: 5px; text-align: justify; "></i>Send email</a>
+                </p>
+            </div>
+            <div>
+                <h2> Social links</h2>
+                <p>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:24px; padding: 5px;"></i>instagram</a>
+                </p>
+                <p>
+                    <a href=""><i class="fa fa-facebook-f" style="font-size:26px;  padding: 5px;"></i>Facebook</a>
+                </p>
+                <p>
+                    <a href=""><i class="fa fa-linkedin-square" style="font-size:24px; padding: 5px;"></i>Linkedin</a>
+                </p>
+                <p>
+                    <a href=""><i class="fa fa-github" style="font-size:24px; padding: 5px;"></i>GitHub</a>
+                </p>
+            </div>
+        </div>
+        <footer>
+            <hr style="color: white;">
+            <p>©Copyright by Apocalypto Web,FLZ and Hampus edrag </p>
+        </footer>
+    </div>
+      <script src="../JS/script.js"></script>
+</body>
+
+</html>

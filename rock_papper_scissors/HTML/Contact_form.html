@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--- Contact form page with a responsive design -->
+    <meta charset="UTF-8">
+    <!--- Meta tags for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <!--- Font w3school for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--- Header with navigation links to other pages -->
+    <header>
+        <h2 class="logo">
+            <a href="../index.html">Homepage</a>
+        </h2>
+
+        <nav class="navigation">
+
+            <a href="../HTML/Mainproject.html">Main game</a>
+            <a href="../HTML/About_uss.html">About us</a>
+            <a href="../HTML/Contact_form.html">Contact us</a>
+            <a href="../HTML/services_projects.html">Services</a>
+
+
+        </nav>
+
+
+    </header>
+    <!--- Intro section with image and text -->
+    <div class="flexbox">
+        <img class="introimg" src="../img/code1.png" alt="intro/hero section">
+
+        <h1 class="intro-text">Contact US</h1>
+        <p class="intro-undertext">Use the Contact form undernieght get in contact with us </p>
+
+    </div>
+    <!--- Contact form section -->
+    <div class="Form-container">
+        <!--- Form that submits to a submit.html page -->
+        <form action="../HTML/submit.html">
+            <!--- Form fields for user input -->
+            <input type="text" id="fname" name="firstname" placeholder="Your name.">
+
+            <!--- Added required attribute to ensure fields are filled out before submission -->
+
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." >
+            <!--- Added required attribute to ensure fields are filled out before submission -->
+
+            <input type="text" id="Email" name="lastname" placeholder="Enter your Email..." required>
+            <!--- Added required attribute to ensure fields are filled out before submission -->
+            <input type="text" id="MessageS" name="lastname" placeholder="Enter your Message...." required>
+            <!--- Added required attribute to ensure fields are filled out before submission -->
+          <label for="reasons" style="margin-right: 100px;"> Reasons that you contacted us:</label>
+
+<div class="Selector" style="text-align: justify;">
+    <select id="reasons" name="reasons" required>
+        <option value="">-- Select a reason --</option>
+        <option value="Feedback">Feedback</option>
+        <option value="order project">Order project</option>
+        <option value="Questions">Questions?</option>
+        <option value="Contact live support">Contact live support</option>
+        <option value="Pricing">Price</option>
+    </select>
+</div>
+            <br>
+            <!--- Submit button for the form -->
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+    <!--- Footer section with additional links and contact information -->
+    <div class="footer">
+        <!--- Footer header -->
+        <div class="header">
+            <h2>WEB CONTENT</h2>
+        </div>
+        <div class="footer_content">
+            <!--- Footer columns with links and contact details -->
+            <div>
+                <h2> Explore</h2>
+                <p>
+                    <a href="../index.html">Homepage</a>
+                </p>
+                <p>
+                    <a href="../HTML/Contact_form.html">Contact</a>
+                </p>
+                <p>
+                    <a href="../HTML/Rock_Paper_scissors_design.html">Main game project</a>
+                </p>
+                <p>
+                    <a href="../HTML/About_uss.html">About us</a>
+                </p>
+            </div>
+            <div>
+                <h2>Contact</h2>
+                <p>
+                      ODengatan300
+                </p>
+                <p>
+                    111 20, stockholm
+                </p>
+                <p>
+                    <a href="tel:+4676111222"><i class="fa fa-phone" style="font-size:24px ; text-align: justify;"></i> +4676111222</a>
+                </p>
+                <p>
+                    <a href="mailto:someone@example.com"> <i class="fa fa-envelope" style="font-size:20px;padding: 5px; text-align: justify; "></i>Send email</a>
+                </p>
+            </div>
+            <div>
+                <h2> Social links</h2>
+                <p>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:24px; padding: 5px;"></i>instagram</a>
+                </p>
+                <p>
+                    <a href=""><i class="fa fa-facebook-f" style="font-size:26px;  padding: 5px;"></i>Facebook</a>
+                </p>
+                <p>
+                    <a href=""><i class="fa fa-linkedin-square" style="font-size:24px; padding: 5px;"></i>Linkedin</a>
+                </p>
+                <p>
+                    <a href=""><i class="fa fa-github" style="font-size:24px; padding: 5px;"></i>GitHub</a>
+                </p>
+            </div>
+        </div>
+        <footer>
+            <hr style="color: white;">
+            <p>©Copyright by Apocalypto Web,FLZ and Hampus edrag </p>
+        </footer>
+    </div>
+</body>
+
+</html>
